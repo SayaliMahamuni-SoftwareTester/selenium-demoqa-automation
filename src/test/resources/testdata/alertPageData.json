@@ -1,0 +1,44 @@
+[
+  {
+    "testId": "PROMPT_VALID_01",
+    "alertType": "PROMPT",
+    "inputText": "Sayali",
+    "action": "ACCEPT",
+    "expectedResult": "You entered Sayali"
+  },
+  {
+    "testId": "PROMPT_EMPTY_02",
+    "alertType": "PROMPT",
+    "inputText": "",
+    "action": "ACCEPT",
+    "expectedResult": ""
+  },
+  {
+    "testId": "PROMPT_SPECIAL_03",
+    "alertType": "PROMPT",
+    "inputText": "@123#Test!",
+    "action": "ACCEPT",
+    "expectedResult": "You entered @123#Test!"
+  },
+  {
+    "testId": "PROMPT_NUMERIC_04",
+    "alertType": "PROMPT",
+    "inputText": "987654",
+    "action": "ACCEPT",
+    "expectedResult": "You entered 987654"
+  },
+  {
+    "testId": "PROMPT_CANCEL_05",
+    "alertType": "PROMPT",
+    "inputText": "Automation",
+    "action": "DISMISS",
+    "expectedResult": ""
+  },
+  {
+    "testId": "PROMPT_LONGTEXT_06",
+    "alertType": "PROMPT",
+    "inputText": "ThisIsALongPromptInputForAutomationTestingPurpose",
+    "action": "ACCEPT",
+    "expectedResult": "You entered ThisIsALongPromptInputForAutomationTestingPurpose"
+  }
+]

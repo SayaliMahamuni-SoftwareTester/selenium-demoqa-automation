@@ -1,0 +1,23 @@
+[
+  {
+    "testId": "DP_VALID_FUTURE",
+    "month": "August",
+    "year": "2027",
+    "day": "25",
+    "expectValid": true
+  },
+  {
+    "testId": "DP_PAST_DATE",
+    "month": "January",
+    "year": "2000",
+    "day": "1",
+    "expectValid": true
+  },
+  {
+    "testId": "DP_INVALID_DAY",
+    "month": "February",
+    "year": "2025",
+    "day": "31",
+    "expectValid": false
+  }
+]

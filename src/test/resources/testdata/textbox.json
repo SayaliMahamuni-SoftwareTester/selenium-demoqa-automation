@@ -1,0 +1,20 @@
+[
+  {
+    "testId": "TB_VALID_01",
+    "username": "Sayali Mahamuni",
+    "email": "sayali@123example.com",
+    "currentAddress": "Pune",
+    "permanentAddress": "Pune",
+    "expectRegisteredEmail": "Email:sayali@123example.com",
+    "expectEmailFieldClass": ""
+  },
+  {
+    "testId": "TB_INVALID_EMAIL_01",
+    "username": "Sayali Mahamuni",
+    "email": "sayli@com",
+    "currentAddress": "Pune",
+    "permanentAddress": "Pune",
+    "expectRegisteredEmail": "",
+    "expectEmailFieldClass": "mr-sm-2 field-error form-control"
+  }
+]

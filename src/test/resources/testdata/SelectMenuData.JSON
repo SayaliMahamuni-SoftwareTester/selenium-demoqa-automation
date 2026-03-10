@@ -1,0 +1,16 @@
+[
+  {
+    "selectValue": "Group 1, option 1",
+    "selectOne": "Mr.",
+    "oldStyle": "Purple",
+    "multiSelect": ["Red", "Blue"],
+    "cars": ["Volvo", "Audi"]
+  },
+  {
+    "selectValue": "Group 2, option 1",
+    "selectOne": "Mrs.",
+    "oldStyle": "Green",
+    "multiSelect": ["Black", "Green"],
+    "cars": ["Saab", "Opel"]
+  }
+]

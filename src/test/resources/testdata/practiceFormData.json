@@ -1,0 +1,41 @@
+[
+  {
+    "testId": "PF_VALID_01",
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john.doe@example.com",
+    "mobile": "9876543210",
+    "subject": "Maths",
+    "filePath": "C:\\Users\\Admin\\Downloads\\profile.jpg",
+    "currentAddress": "Pune, Maharashtra",
+    "state": "NCR",
+    "city": "Delhi",
+    "expectSuccess": true
+  },
+  {
+    "testId": "PF_INVALID_EMAIL_01",
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john@com",
+    "mobile": "9876543210",
+    "subject": "Maths",
+    "filePath": "C:\\Users\\Admin\\Downloads\\profile.jpg",
+    "currentAddress": "Pune, Maharashtra",
+    "state": "NCR",
+    "city": "Delhi",
+    "expectSuccess": false
+  },
+  {
+    "testId": "PF_INVALID_MOBILE_01",
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john.doe@example.com",
+    "mobile": "12345",
+    "subject": "Maths",
+    "filePath": "C:\\Users\\Admin\\Downloads\\profile.jpg",
+    "currentAddress": "Pune, Maharashtra",
+    "state": "NCR",
+    "city": "Delhi",
+    "expectSuccess": false
+  }
+]
