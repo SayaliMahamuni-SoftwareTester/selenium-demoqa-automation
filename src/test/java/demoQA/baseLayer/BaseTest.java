@@ -19,7 +19,7 @@ import com.aventstack.extentreports.ExtentTest;
 import demoQA.utilities.ExtentManager;
 import demoQA.utilities.ScreenshotUtils;
 
-public class BaseTest {
+public class BaseTest{
 
     protected static ExtentReports extent;
     protected static ThreadLocal<ExtentTest> test = new ThreadLocal<>();

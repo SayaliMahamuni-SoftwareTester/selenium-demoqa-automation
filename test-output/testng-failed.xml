@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="demoQA.testUtils.TestListener"/>
+  </listeners>
+  <test thread-count="3" parallel="tests" name="Edge Test(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="demoQA.testLayer.ProgressBarTest">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="verifyProgressCompletesSuccessfully"/>
+          <include name="verifyProgressStopsMidway"/>
+          <include name="tearDown"/>
+          <include name="verifyProgressResetsAfterCompletion"/>
+          <include name="beforeSuite"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- demoQA.testLayer.ProgressBarTest -->
+      <class name="demoQA.testLayer.DatePickerTest">
+        <methods>
+          <include name="verifyDatePicker" invocation-numbers="0 1"/>
+          <include name="afterSuite"/>
+          <include name="tearDown"/>
+          <include name="beforeSuite"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- demoQA.testLayer.DatePickerTest -->
+      <class name="demoQA.testLayer.TextBoxTest">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="runTextBoxTests" invocation-numbers="0 1"/>
+          <include name="tearDown"/>
+          <include name="beforeSuite"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- demoQA.testLayer.TextBoxTest -->
+      <class name="demoQA.testLayer.FrameTest">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="verifySwitchBackToDefaultContent"/>
+          <include name="tearDown"/>
+          <include name="beforeSuite"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- demoQA.testLayer.FrameTest -->
+      <class name="demoQA.testLayer.UploadAndDownloadTest">
+        <methods>
+          <include name="verifyFileDownload"/>
+          <include name="afterSuite"/>
+          <include name="verifyFileUpload"/>
+          <include name="tearDown"/>
+          <include name="beforeSuite"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- demoQA.testLayer.UploadAndDownloadTest -->
+      <class name="demoQA.testLayer.PracticeFormTest">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="runPracticeFormTests"/>
+          <include name="tearDown"/>
+          <include name="beforeSuite"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- demoQA.testLayer.PracticeFormTest -->
+      <class name="demoQA.testLayer.SelectMenuTest">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="tearDown"/>
+          <include name="beforeSuite"/>
+          <include name="verifySelectMenuFunctionality" invocation-numbers="0 1"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- demoQA.testLayer.SelectMenuTest -->
+    </classes>
+  </test> <!-- Edge Test(failed) -->
+  <test thread-count="3" parallel="tests" name="Chrome Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="demoQA.testLayer.ProgressBarTest">
+        <methods>
+          <include name="verifyProgressCompletesSuccessfully"/>
+          <include name="afterSuite"/>
+          <include name="tearDown"/>
+          <include name="verifyProgressStopsMidway"/>
+          <include name="verifyProgressResetsAfterCompletion"/>
+          <include name="beforeSuite"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- demoQA.testLayer.ProgressBarTest -->
+      <class name="demoQA.testLayer.DatePickerTest">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="verifyDatePicker" invocation-numbers="0 1 2"/>
+          <include name="tearDown"/>
+          <include name="beforeSuite"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- demoQA.testLayer.DatePickerTest -->
+      <class name="demoQA.testLayer.TextBoxTest">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="runTextBoxTests" invocation-numbers="0 1"/>
+          <include name="tearDown"/>
+          <include name="beforeSuite"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- demoQA.testLayer.TextBoxTest -->
+      <class name="demoQA.testLayer.FrameTest">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="verifySwitchBackToDefaultContent"/>
+          <include name="tearDown"/>
+          <include name="beforeSuite"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- demoQA.testLayer.FrameTest -->
+      <class name="demoQA.testLayer.UploadAndDownloadTest">
+        <methods>
+          <include name="verifyFileDownload"/>
+          <include name="afterSuite"/>
+          <include name="verifyFileUpload"/>
+          <include name="tearDown"/>
+          <include name="beforeSuite"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- demoQA.testLayer.UploadAndDownloadTest -->
+      <class name="demoQA.testLayer.PracticeFormTest">
+        <methods>
+          <include name="runPracticeFormTests" invocation-numbers="2"/>
+          <include name="afterSuite"/>
+          <include name="tearDown"/>
+          <include name="beforeSuite"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- demoQA.testLayer.PracticeFormTest -->
+      <class name="demoQA.testLayer.SelectMenuTest">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="tearDown"/>
+          <include name="beforeSuite"/>
+          <include name="verifySelectMenuFunctionality" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- demoQA.testLayer.SelectMenuTest -->
+    </classes>
+  </test> <!-- Chrome Test(failed) -->
+  <test thread-count="3" parallel="tests" name="Firefox Test(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="demoQA.testLayer.ProgressBarTest">
+        <methods>
+          <include name="verifyProgressCompletesSuccessfully"/>
+          <include name="afterSuite"/>
+          <include name="tearDown"/>
+          <include name="verifyProgressStopsMidway"/>
+          <include name="verifyProgressResetsAfterCompletion"/>
+          <include name="beforeSuite"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- demoQA.testLayer.ProgressBarTest -->
+      <class name="demoQA.testLayer.DatePickerTest">
+        <methods>
+          <include name="verifyDatePicker"/>
+          <include name="afterSuite"/>
+          <include name="tearDown"/>
+          <include name="beforeSuite"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- demoQA.testLayer.DatePickerTest -->
+      <class name="demoQA.testLayer.AlertTest">
+        <methods>
+          <include name="verifyConfirmAlert"/>
+          <include name="afterSuite"/>
+          <include name="verifyPromptAlert"/>
+          <include name="tearDown"/>
+          <include name="verifyTimerAlert"/>
+          <include name="beforeSuite"/>
+          <include name="verifySimpleAlert"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- demoQA.testLayer.AlertTest -->
+      <class name="demoQA.testLayer.TextBoxTest">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="runTextBoxTests" invocation-numbers="0 1"/>
+          <include name="tearDown"/>
+          <include name="beforeSuite"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- demoQA.testLayer.TextBoxTest -->
+      <class name="demoQA.testLayer.FrameTest">
+        <methods>
+          <include name="verifySwitchBackToDefaultContent"/>
+          <include name="afterSuite"/>
+          <include name="verifyParentFrameContent"/>
+          <include name="tearDown"/>
+          <include name="beforeSuite"/>
+          <include name="verifyInvalidFrameHandling"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- demoQA.testLayer.FrameTest -->
+      <class name="demoQA.testLayer.UploadAndDownloadTest">
+        <methods>
+          <include name="verifyFileDownload"/>
+          <include name="afterSuite"/>
+          <include name="verifyFileUpload"/>
+          <include name="tearDown"/>
+          <include name="beforeSuite"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- demoQA.testLayer.UploadAndDownloadTest -->
+      <class name="demoQA.testLayer.PracticeFormTest">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="runPracticeFormTests"/>
+          <include name="tearDown"/>
+          <include name="beforeSuite"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- demoQA.testLayer.PracticeFormTest -->
+      <class name="demoQA.testLayer.SelectMenuTest">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="tearDown"/>
+          <include name="beforeSuite"/>
+          <include name="verifySelectMenuFunctionality"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- demoQA.testLayer.SelectMenuTest -->
+    </classes>
+  </test> <!-- Firefox Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
