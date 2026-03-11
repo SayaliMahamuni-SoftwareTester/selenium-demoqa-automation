@@ -31,41 +31,45 @@ The purpose of this project is to demonstrate automation testing skills includin
 
 ## Project Structure
 
+## Project Structure
+
 DemoQA-Selenium-Automation
 │
-├── src/test/java
-│   │
-│   ├── demoQA.baseLayer
-│   │   ├── BasePage.java
-│   │   ├── BaseTest.java
-│   │   ├── ConfigReader.java
-│   │   └── DriverManager.java
-│   │
-│   ├── demoQA.pageLayer
-│   │   ├── HomePage.java
-│   │   ├── SubModulePage.java
-│   │   ├── AlertPage.java
-│   │   └── PracticeFormPage.java
-│   │
-│   ├── demoQA.testLayer
-│   │   ├── HomeTest.java
-│   │   ├── AlertTest.java
-│   │   └── PracticeFormTest.java
-│   │
-│   └── demoQA.utilities
-│       ├── WaitUtils.java
-│       ├── ScrollUtils.java
-│       ├── JSUtils.java
-│       └── TestDataReader.java
+├── src
+│   └── test
+│       ├── java
+│       │   ├── demoQA.baseLayer
+│       │   │   ├── BasePage.java
+│       │   │   ├── BaseTest.java
+│       │   │   ├── ConfigReader.java
+│       │   │   └── DriverManager.java
+│       │   │
+│       │   ├── demoQA.pageLayer
+│       │   │   ├── HomePage.java
+│       │   │   ├── SubModulePage.java
+│       │   │   ├── AlertPage.java
+│       │   │   └── PracticeFormPage.java
+│       │   │
+│       │   ├── demoQA.testLayer
+│       │   │   ├── HomeTest.java
+│       │   │   ├── AlertTest.java
+│       │   │   └── PracticeFormTest.java
+│       │   │
+│       │   └── demoQA.utilities
+│       │       ├── WaitUtils.java
+│       │       ├── ScrollUtils.java
+│       │       ├── JSUtils.java
+│       │       └── TestDataReader.java
+│       │
+│       └── resources
+│           └── config.properties
 │
-├── src/test/resources
-│   └── config.properties
-│
+├── Screenshots
+├── extent-reports
 ├── test-output
-│   └── TestNG Reports
 │
+├── testng.xml
 ├── pom.xml
-│
 └── README.md
 ---
 
